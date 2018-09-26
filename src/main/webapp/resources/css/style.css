@@ -9,6 +9,8 @@ body {
     margin: 0px;
 }
 
-.centralized {
-    text-align: center;
+footer {
+    width: 100%;
+    bottom: 0;
+    position: fixed;
 }
