@@ -1,41 +1,25 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
-    <h:head>
-        <title>JSF Composition</title>
-        <h:outputStylesheet library="css" name="style.css" />
-    </h:head>
-    <h:body>
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<ui:composition template="/templetes.xhtml">
+    <ui:define name="content">
         <div align="center">
-            <h:form id="menu">
-                <h:panelGrid cellspacing="5" cellpadding="5" columns="5">
-                    <h:commandLink action="index">Lorem Ipsum</h:commandLink>
-                    <h:commandLink action="what">What is Lorem Ipsum?</h:commandLink>
-                    <h:commandLink action="why">Why do we use it?</h:commandLink>
-                    <h:commandLink action="comefrom">Where does it come from?</h:commandLink>
-                    <h:commandLink action="getsome">Where can I get some?</h:commandLink>
-                </h:panelGrid>
-            </h:form>
-        </div>
-        <div align="center">
-            <h2>Why do we use it?</h2>
+            <h2>Porque usamos isso?</h2>
         </div>
         <div align="justify">
-            <p>It is a long established fact that a reader will be distracted by the 
-                readable content of a page when looking at its layout. The point of using 
-                Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
-                as opposed to using 'Content here, content here', making it look like readable English. 
-                Many desktop publishing packages and web page editors now use Lorem Ipsum as their default 
-                model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
-                Various versions have evolved over the years, sometimes by accident, sometimes on purpose 
-                (injected humour and the like).</p>
-        </div>
-        <footer>
-            <div align="center">
-                Copyright @ Fernando C. Paschualetto
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <p>É um fato há muito estabelecido que um leitor se distrairá com o conteúdo legível de uma página ao analisar seu layout. O ponto de usar o Lorem Ipsum é que ele tem uma distribuição de letras mais ou menos normal, em vez de usar 'Conteúdo aqui, conteúdo aqui', fazendo com que pareça legível em inglês. Muitos editores de editoração eletrônica e editores de páginas da Web agora usam o Lorem Ipsum como seu texto de modelo padrão, e uma pesquisa por "lorem ipsum" descobrirá muitos sites da Web ainda em sua infância. Várias versões evoluíram ao longo dos anos, às vezes por acidente, às vezes de propósito (humor injetado e coisas do gênero).</p>
+                </div>
+                <div class="col-md-1"></div>
             </div>
-        </footer>
-    </h:body>
+            
+            
+        </div>
+    </ui:define>
+</ui:composition>
 </html>
-
